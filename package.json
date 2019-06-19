@@ -5,7 +5,7 @@
   "main": "built/index.js",
   "types": "src/index.ts",
   "scripts": {
-    "prepare": "rm -rf built && tsc",
+    "prepare": "rimraf built && tsc",
     "start": "tsc -w --outDir demo/built"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "ascoders-tslint-config": "^1.0.2",
     "react": "*",
     "react-native": "*",
+    "rimraf": "^2.6.3",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.13.0",
     "typescript": "^2.9.2"
